@@ -1,37 +1,29 @@
-// import React from 'react';
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import SearchIcon from './search.svg';
-import MovieCard from './MovieCard';
+import React, { useState, useEffect } from "react";
 
-// 35d7ee6b
-// http://www.omdbapi.com/?i=tt3896198&apikey=35d7ee6b
+import MovieCard from "./MovieCard";
+import SearchIcon from "./search.svg";
+import "./App.css";
 
-const API_URL = "http://www.omdbapi.com?apikey=35d7ee6b";
-// const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=35d7ee6b';
-
+const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
-  
 
   useEffect(() => {
-    searchMovies("Love");
+    searchMovies("Batman");
   }, []);
 
   const searchMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
+
     setMovies(data.Search);
   };
 
-  
-
-
   return (
     <div className="app">
-      <h1>Breeze Movieland</h1>
+      <h1>MovieLand</h1>
 
       <div className="search">
         <input
@@ -61,10 +53,4 @@ const App = () => {
   );
 };
 
-    
-
-
 export default App;
-
-
-
