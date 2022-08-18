@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Breeze-MovieLand/static/css/main.e52110f5.css",
+    "main.js": "/Breeze-MovieLand/static/js/main.dd218998.js",
+    "static/media/search.svg": "/Breeze-MovieLand/static/media/search.85548e4d6d235088a0d3892fed2b6f29.svg",
+    "index.html": "/Breeze-MovieLand/index.html",
+    "main.e52110f5.css.map": "/Breeze-MovieLand/static/css/main.e52110f5.css.map",
+    "main.dd218998.js.map": "/Breeze-MovieLand/static/js/main.dd218998.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e52110f5.css",
+    "static/js/main.dd218998.js"
+  ]
+}
